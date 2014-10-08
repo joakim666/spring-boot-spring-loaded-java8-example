@@ -14,8 +14,8 @@ import java.util.function.Function;
 public class GreetingController {
 
   List<String> persons = Arrays.asList("Walter White", "Heisenberg", "Jesse Pinkman", "Saul Goodman", "Gustavo Fringe");
-  Function<List<String>, String> random = (List<String> list) ->  persons.get(new Random().nextInt(list.size() - 1));
 
+  Function<List<String>, String> random = (List<String> list) -> list.get(new Random().nextInt(list.size() - 1));
 
   @RequestMapping("/greeting")
   public String greeting(@RequestParam(value = "name", required = false, defaultValue = "World") String name, Model model) {
