@@ -23,3 +23,14 @@ Instead of manually running mvn compile you can make the compilation from within
 1. The IDE puts the compiled classes in the **target/classes** directory
 
 You can even enable auto-compilation if your IDE supports that, for totally seamless development.
+
+
+## Technologies
+
+* [Java 8](http://java.oracle.com)
+* [Maven](http://maven.apache.org)
+* [spring-boot](http://projects.spring.io/spring-boot/)
+* [spring-loaded](https://github.com/spring-projects/spring-loaded)
+* [spring-security](http://projects.spring.io/spring-security/)
+* [Thymeleaf](http://www.thymeleaf.org)
+* [Thymeleaf Custom Layout - Template layouts in Spring MVC application with no extensions](https://github.com/kolorobot/thymeleaf-custom-layout)
