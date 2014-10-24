@@ -3,4 +3,5 @@ target
 *.iml
 *.ipr
 *.iws
-
+logs
+sessions
