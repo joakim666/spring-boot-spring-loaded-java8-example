@@ -1,5 +1,7 @@
 package hello;
 
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.web.bind.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,7 +17,8 @@ public class SecurityController {
 
     @Layout("layouts/logged_in")
     @RequestMapping("/hello")
-    public String hello(final Model model) {
+    public String hello(@AuthenticationPrincipal User user, final Model model) {
+        model.addAttribute("name", user.getUsername());
         return "hello";
     }
 
